@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+
+    <title>Title</title>
+
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+
+    <!-- site -->
+    <div class="site">
+
+        <!-- site__header -->
+        <div class="site__header">
+
+            <!-- site__header-layout -->
+            <div class="site__header-layout">
+
+                <!-- logo -->
+                <h1 class="logo">
+                    <!--<svg viewBox="0 0 142 38">-->
+                        <!--<title>logo</title>-->
+                        <!--&lt;!&ndash;<image xlink:href="data:img/png;base64,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"/>&ndash;&gt;-->
+                    <!--</svg>-->
+                    <img src="img/logo.png" alt="edu">
+                </h1>
+                <!-- /logo -->
+
+                <!-- call-back -->
+                <div class="call-back">
+
+                    <!-- call-back__phone -->
+                    <a href="tel:+74953767676" class="call-back__phone">
+                        <svg>
+                            <path fill-rule="evenodd"  fill="rgb(255, 76, 91)" d="M13.775,18.003 C13.380,18.003 12.995,17.936 12.631,17.808 C6.753,15.725 2.098,10.940 0.179,5.006 C-0.278,3.598 0.206,2.049 1.381,1.151 L2.384,0.383 C3.319,-0.334 4.816,-0.007 5.365,1.062 L7.142,4.521 L7.176,4.841 C7.176,5.107 7.076,5.359 6.895,5.551 L6.549,5.927 C5.862,6.676 5.713,7.786 6.179,8.692 C6.871,10.040 7.950,11.120 9.299,11.814 C10.154,12.260 11.352,12.093 12.061,11.444 L12.446,11.089 C12.625,10.921 12.894,10.819 13.158,10.819 L13.329,10.819 L13.612,10.925 L16.920,12.629 C17.590,12.973 18.007,13.655 18.007,14.406 C18.007,14.931 17.801,15.429 17.429,15.805 L16.282,16.972 C15.635,17.627 14.722,18.003 13.775,18.003 Z"/>
+                        </svg>
+                        +7 (495) 376-76-76
+                    </a>
+                    <!-- /call-back__phone -->
+
+                    <!-- btn -->
+                    <a href="#" class="btn btn_1">
+                        <span>
+                            <svg>
+                                <path fill-rule="evenodd" d="M11.985,10.795 C11.985,8.884 11.534,5.949 9.040,5.949 C8.777,5.949 7.662,7.125 5.994,7.125 C4.326,7.125 3.211,5.949 2.947,5.949 C0.454,5.949 0.003,8.884 0.003,10.795 C0.003,12.166 0.922,12.986 2.275,12.986 L9.713,12.986 C11.066,12.986 11.985,12.166 11.985,10.795 ZM9.262,3.242 C9.262,1.449 7.798,-0.006 5.994,-0.006 C4.190,-0.006 2.726,1.449 2.726,3.242 C2.726,5.035 4.190,6.490 5.994,6.490 C7.798,6.490 9.262,5.035 9.262,3.242 Z"/>
+                            </svg>
+                            РЕГИСТРАЦИЯ
+                        </span>
+                    </a>
+                    <!-- /btn -->
+
+                </div>
+                <!-- /call-back -->
+
+                <!-- menu -->
+                <nav class="menu">
+
+                    <a href="#" class="menu__item">О проекте</a>
+                    <a href="#" class="menu__item">Возможности платформы</a>
+                    <a href="#" class="menu__item">Сотрудничество</a>
+                    <a href="#" class="menu__item">Партнеры</a>
+                    <a href="#" class="menu__item">Контакты</a>
+
+                </nav>
+                <!-- /menu -->
+
+            </div>
+            <!-- /site__header-layout -->
+
+        </div>
+        <!-- /site__header -->
+
+        <!-- promo -->
+        <div class="promo">
+
+            <!-- swiper-container -->
+            <div class="promo__swiper swiper-container">
+
+                <!-- swiper-wrapper -->
+                <div class="swiper-wrapper">
+
+                    <!-- promo__item -->
+                    <a href="#" class="promo__item swiper-slide" style="background-image: url(pic/slide_001.jpg)">
+
+                        <!-- promo__content -->
+                        <div class="promo__content">
+                            <h2 class="promo__title">Информация
+                                о программе сертификации</h2>
+                            <p>Благодаря программе сертификации Microsoft Office Specialist (MOS) учебные заведения получают уникальную возможность предложить своим студентам, сотрудникам и преподавателям общепризнанный.</p>
+                        </div>
+                        <!-- /promo__content -->
+
+                    </a>
+                    <!-- /promo__item -->
+
+                    <!-- promo__item -->
+                    <a href="#" class="promo__item swiper-slide" style="background-image: url(pic/slide_002.jpg)">
+
+                        <!-- promo__content -->
+                        <div class="promo__content">
+                            <h2 class="promo__title">Информация
+                                о программе сертификации</h2>
+                            <p>Благодаря программе сертификации Microsoft Office Specialist (MOS) учебные заведения получают уникальную возможность предложить своим студентам, сотрудникам и преподавателям общепризнанный.</p>
+                        </div>
+                        <!-- /promo__content -->
+
+                    </a>
+                    <!-- /promo__item -->
+
+                    <!-- promo__item -->
+                    <a href="#" class="promo__item swiper-slide" style="background-image: url(pic/slide_001.jpg)">
+
+                        <!-- promo__content -->
+                        <div class="promo__content">
+                            <h2 class="promo__title">Информация
+                                о программе сертификации</h2>
+                            <p>Благодаря программе сертификации Microsoft Office Specialist (MOS) учебные заведения получают уникальную возможность предложить своим студентам, сотрудникам и преподавателям общепризнанный.</p>
+                        </div>
+                        <!-- /promo__content -->
+
+                    </a>
+                    <!-- /promo__item -->
+
+                    <!-- promo__item -->
+                    <a href="#" class="promo__item swiper-slide" style="background-image: url(pic/slide_002.jpg)">
+
+                        <!-- promo__content -->
+                        <div class="promo__content">
+                            <h2 class="promo__title">Информация
+                                о программе сертификации</h2>
+                            <p>Благодаря программе сертификации Microsoft Office Specialist (MOS) учебные заведения получают уникальную возможность предложить своим студентам, сотрудникам и преподавателям общепризнанный.</p>
+                            <p>Благодаря программе сертификации Microsoft Office Specialist (MOS) учебные заведения получают уникальную возможность предложить своим студентам, сотрудникам и преподавателям общепризнанный.</p>
+                        </div>
+                        <!-- /promo__content -->
+
+                    </a>
+                    <!-- /promo__item -->
+
+                </div>
+                <!-- /swiper-wrapper -->
+
+                <div class="swiper-pagination"></div>
+
+            </div>
+            <!-- /swiper-container -->
+
+            <!-- promo__enter-wrap -->
+            <div class="promo__enter-wrap">
+
+                <!-- promo__enter -->
+                <div class="promo__enter">
+                    <form action="#">
+                        <input class="site__input" required type="email" name="email" placeholder="Ваш e-mail">
+                        <input class="site__input" required type="password" name="password" placeholder="Пароль">
+
+                        <div class="promo__enter-footer">
+
+                            <div class="nice-checkbox">
+                                <input type="checkbox" name="remember" id="remember">
+                                <label for="remember">Запомнить</label>
+                            </div>
+                            <button class="btn btn_3" type="submit"><span>ВОЙТИ</span></button>
+
+                        </div>
+
+                        <a href="#" class="promo__enter-restore">Восстановить пароль?</a>
+                    </form>
+                </div>
+                <!-- /promo__enter -->
+
+            </div>
+            <!-- /promo__enter-wrap -->
+
+        </div>
+        <!-- /promo -->
+
+        <!-- tasks -->
+        <div class="tasks">
+
+            <!-- site__title -->
+            <h2 class="site__title">Решаемые задачи</h2>
+            <!-- /site__title -->
+
+            <!-- tasks__wrap -->
+            <div class="tasks__wrap slides">
+
+                <!-- tasks__item -->
+                <div class="tasks__item">
+
+                    <!-- /tasks__pic -->
+                    <div class="tasks__pic">
+
+                        <!-- tasks__animation -->
+                        <div class="tasks__animation"></div>
+                        <!-- /tasks__animation -->
+
+                        <img src="img/tasks-pic01.png" alt="Icon">
+                    </div>
+                    <!-- /tasks__pic -->
+
+                    Автоматизация образовательных процессов
+
+                </div>
+                <!-- /tasks__item -->
+
+                <!-- tasks__item -->
+                <div class="tasks__item">
+
+                    <!-- /tasks__pic -->
+                    <div class="tasks__pic">
+
+                        <!-- tasks__animation -->
+                        <div class="tasks__animation"></div>
+                        <!-- /tasks__animation -->
+
+                        <img src="img/tasks-pic02.png" alt="Icon">
+                    </div>
+                    <!-- /tasks__pic -->
+
+                    Единое информационное пространство для всех участников
+
+                </div>
+                <!-- /tasks__item -->
+
+                <!-- tasks__item -->
+                <div class="tasks__item">
+
+                    <!-- /tasks__pic -->
+                    <div class="tasks__pic">
+
+                        <!-- tasks__animation -->
+                        <div class="tasks__animation"></div>
+                        <!-- /tasks__animation -->
+
+                        <img src="img/tasks-pic03.png" alt="Icon">
+                    </div>
+                    <!-- /tasks__pic -->
+
+                    Автоматическое формирование приказов, отчетов и других документов
+
+                </div>
+                <!-- /tasks__item -->
+
+                <!-- tasks__item -->
+                <div class="tasks__item">
+
+                    <!-- /tasks__pic -->
+                    <div class="tasks__pic">
+
+                        <!-- tasks__animation -->
+                        <div class="tasks__animation"></div>
+                        <!-- /tasks__animation -->
+
+                        <img src="img/tasks-pic04.png" alt="Icon">
+                    </div>
+                    <!-- /tasks__pic -->
+
+                    Автоматизация обмена данными с внешними системами
+
+                </div>
+                <!-- /tasks__item -->
+
+            </div>
+            <!-- /tasks__wrap -->
+
+        </div>
+        <!-- /tasks -->
+
+        <!-- news -->
+        <div class="news slides">
+
+            <!-- news__wrap -->
+            <div class="news__wrap">
+
+                <!-- news__title -->
+                <h2 class="news__title">
+                    Новости
+                </h2>
+                <!-- /news__title -->
+
+                <!-- news__items-wrap -->
+                <div class="news__items-wrap">
+
+                    <!-- items -->
+                    <a href="#" class="news__item">
+                        <article>
+
+                            <img src="pic/news-item-1.jpg" alt="">
+
+                            <!-- news__item-time -->
+                            <p class="news__item-time">
+                                <time datetime="2017-01-21">21 января <span>/ 2017</span></time>
+                            </p>
+                            <!-- /news__item-time -->
+
+                            <!-- news__item-title -->
+                            <h3 class="news__item-title">
+                                РЭЦ стал агентом Правительства по охране интеллектуальной собственности для экспортеров
+                            </h3>
+                            <!-- /news__item-title -->
+
+                            <!-- news__item-text -->
+                            <p class="news__item-text">
+                                14 декабря в Москве состоялась пятая Образовательная сессия для представителей  региональных операторов Проекта
+                            </p>
+                            <!-- /news__item-text -->
+
+                        </article>
+                    </a>
+                    <!-- /items -->
+
+                    <!-- items -->
+                    <a href="#" class="news__item">
+                        <article>
+
+                            <img src="pic/news-item-2.jpg" alt="">
+
+                            <!-- news__item-time -->
+                            <p class="news__item-time">
+                                <time datetime="2017-01-14">14 января <span>/ 2017</span></time>
+                            </p>
+                            <!-- /news__item-time -->
+
+                            <!-- news__item-title -->
+                            <h3 class="news__item-title">
+                                В Тегеране состоялся Российско-Иранский бизнес-форум
+                            </h3>
+                            <!-- /news__item-title -->
+
+                            <!-- news__item-text -->
+                            <p class="news__item-text">
+                                13 декабря в Тегеране состоялся Российско-Иранский бизнес-форум, который открыли Министр энергетики Российской Федерации Александр Новак и Министр связи и информационных технологий Исламской Республики Иран Махмуд Ваэзи.
+                            </p>
+                            <!-- /news__item-text -->
+
+                        </article>
+                    </a>
+                    <!-- /items -->
+
+                    <!-- items -->
+                    <a href="#" class="news__item">
+                        <article>
+
+                            <img src="pic/news-item-3.jpg" alt="">
+
+                            <!-- news__item-time -->
+                            <p class="news__item-time">
+                                <time datetime="2016-05-05">5 vмая <span>/ 2016</span></time>
+                            </p>
+                            <!-- /news__item-time -->
+
+                            <!-- news__item-title -->
+                            <h3 class="news__item-title">
+                                В Москве состоялась заключительная в этом году сессия Образовательного проекта РЭЦ
+                            </h3>
+                            <!-- /news__item-title -->
+
+                            <!-- news__item-text -->
+                            <p class="news__item-text">
+                                13 декабря в Тегеране состоялся Российско-Иранский бизнес-форум, который открыли Министр энергетики Российской Федерации Александр Новак и Министр связи и информационных технологий Исламской Республики Иран Махмуд Ваэзи.
+                            </p>
+                            <!-- /news__item-text -->
+
+                        </article>
+                    </a>
+                    <!-- /items -->
+
+                    <!-- items -->
+                    <a href="#" class="news__item">
+                        <article>
+
+                            <img src="pic/news-item-1.jpg" alt="">
+
+                            <!-- news__item-time -->
+                            <p class="news__item-time">
+                                <time datetime="2016-06-17">17 апреля <span>/ 2016</span></time>
+                            </p>
+                            <!-- /news__item-time -->
+
+                            <!-- news__item-title -->
+                            <h3 class="news__item-title">
+                                РЭЦ создал новый уникальный сервис для экспортеров
+                            </h3>
+                            <!-- /news__item-title -->
+
+                            <!-- news__item-text -->
+                            <p class="news__item-text">
+                                Российский экспортный центр представляет уникальный интерактивный проект по анализу статистики экспорта регионов России
+                            </p>
+                            <!-- /news__item-text -->
+
+                        </article>
+                    </a>
+                    <!-- /items -->
+
+                </div>
+                <!-- /news__items-wrap -->
+
+            </div>
+            <!-- /news__wrap -->
+
+
+        </div>
+        <!-- /news -->
+
+        <!-- platform -->
+        <div class="platform">
+
+            <!-- site__title -->
+            <h2 class="site__title">Сегодня платформа – это...</h2>
+            <!-- /site__title -->
+
+            <!-- platform__item -->
+            <div class="platform__item">
+                <div class="platform__number">1827</div>
+                Пользователей
+            </div>
+            <!-- /platform__item -->
+
+            <!-- platform__item -->
+            <div class="platform__item">
+                <div class="platform__number">38</div>
+                Колледжей
+            </div>
+            <!-- /platform__item -->
+
+            <!-- platform__item -->
+            <div class="platform__item">
+                <div class="platform__number">45</div>
+                Вузов
+            </div>
+            <!-- /platform__item -->
+
+            <!-- platform__item -->
+            <div class="platform__item">
+                <div class="platform__number">27</div>
+                Регионов
+            </div>
+            <!-- /platform__item -->
+
+        </div>
+        <!-- /platform -->
+
+        <!-- system -->
+        <div class="system">
+            <!-- system__wrap -->
+            <div class="system__wrap">
+
+                <!-- system__title -->
+                <p class="system__title">
+                    Что вы думаете по поводу новой системы управления
+                    образовательным процессом?
+                </p>
+                <!-- /system__title -->
+                <!-- system__btn -->
+                <a href="#" class="system__btn btn btn_2 popup__open" data-popup="question">
+                 <span>
+                    <svg>
+                        <path fill-rule="evenodd" d="M3.355,12.821H2.366V11.638H1.183V10.648l0.841-.841L4.2,11.98ZM8.189,4.243a0.217,0.217,0,0,1-.065.157L3.115,9.41a0.216,0.216,0,0,1-.157.065,0.194,0.194,0,0,1-.2-0.2,0.217,0.217,0,0,1,.065-0.157L7.829,4.1a0.217,0.217,0,0,1,.157-0.065A0.194,0.194,0,0,1,8.189,4.243ZM7.69,2.468L0,10.159V14H3.845l7.691-7.691ZM14,3.355a1.229,1.229,0,0,0-.342-0.841L11.489,0.351A1.2,1.2,0,0,0,10.648,0a1.16,1.16,0,0,0-.832.351L8.282,1.876l3.845,3.845,1.534-1.534A1.19,1.19,0,0,0,14,3.355Z"/>
+                        </svg>
+                        написать отзыв
+                    </span>
+                </a>
+                <!-- /system__btn -->
+
+            </div>
+            <!-- /system__wrap -->
+
+        </div>
+        <!-- /system -->
+
+        <!--progress-->
+        <div class="progress slides">
+
+            <!--progress__wrap-->
+            <div class="progress__wrap">
+
+                <!--site__title-->
+                <div class="site__title">ПЛАНЫ РАЗВИТИЯ
+                    НА БЛИЖАЙШЕЕ БУДУЩЕЕ</div>
+                <!--/site__title-->
+
+                <!--progress__list-->
+                <div class="progress__list">
+
+                    <!--progress__item-->
+                    <div class="progress__item">
+
+                        <!--progress__item-title-->
+                        <div class="progress__item-title">
+
+                            <h3>Сейчас</h3>
+                            <span>Октябрь / 2016</span>
+
+                        </div>
+                        <!--/progress__item-title-->
+
+                        <p>
+                            На данный момент уже существует личный кабинет, где вы можете вести учёт студентов,
+                            загружать документы.
+                        </p>
+
+                    </div>
+                    <!--/progress__item-->
+
+                    <!--progress__item-->
+                    <div class="progress__item">
+
+                        <!--progress__item-title-->
+                        <div class="progress__item-title">
+
+                            <h3>Январь</h3>
+                            <span>2017</span>
+
+                        </div>
+                        <!--/progress__item-title-->
+
+                        <p>
+                            На данный момент уже существует личный кабинет, где вы можете вести учёт студентов,
+                            загружать документы.
+                        </p>
+
+                    </div>
+                    <!--/progress__item-->
+
+                    <!--progress__item-->
+                    <div class="progress__item">
+
+                        <!--progress__item-title-->
+                        <div class="progress__item-title">
+
+                            <h3>Март</h3>
+                            <span>2017</span>
+
+                        </div>
+                        <!--/progress__item-title-->
+
+                        <p>
+                            На данный момент уже существует личный кабинет, где вы можете вести учёт студентов,
+                            загружать документы.
+                        </p>
+
+                    </div>
+                    <!--/progress__item-->
+
+                    <!--progress__item-->
+                    <div class="progress__item">
+
+                        <!--progress__item-title-->
+                        <div class="progress__item-title">
+
+                            <h3>Сентябрь</h3>
+                            <span>2017</span>
+
+                        </div>
+                        <!--/progress__item-title-->
+
+                        <p>
+                            На данный момент уже существует личный кабинет, где вы можете вести учёт студентов,
+                            загружать документы.
+                        </p>
+
+                    </div>
+                    <!--/progress__item-->
+
+                </div>
+                <!--/progress__list-->
+
+            </div>
+            <!--/progress__wrap-->
+
+        </div>
+        <!--/progress-->
+
+        <!-- site__footer -->
+      <div class="site__footer">
+
+        <!-- site__footer-wrap -->
+        <div class="site__footer-wrap">
+
+          <!-- site__footer-scroll -->
+          <button class="site__footer-scroll" type="button"></button>
+          <!-- /site__footer-scroll -->
+
+          <!-- site__footer-menu -->
+          <div class="site__footer-menu">
+            <a href="#">О проекте</a>
+            <a href="#">Возможности платформы</a>
+            <a href="#">Сотрудничество</a>
+            <a href="#">Партнеры</a>
+            <a href="#">Контакты</a>
+          </div>
+          <!-- /site__footer-menu -->
+
+          <!-- site__footer-phone -->
+          <div class="site__footer-phone">
+              <span></span>
+              <a href="tel:+74953767676">+7 (495) 376-76-76</a>
+          </div>
+          <!-- /site__footer-phone -->
+
+        </div>
+        <!-- /site__footer-wrap -->
+
+      </div>
+      <!-- /site__footer -->
+
+    </div>
+    <!-- /site -->
+
+    <!-- popup -->
+    <div class="popup">
+
+        <!-- popup__wrap -->
+        <div class="popup__wrap">
+
+            <!-- popup__content -->
+            <div class="popup__content popup__question">
+
+                <a href="#" class="popup__close"></a>
+
+                <h2>Ваш отзыв или вопрос</h2>
+
+                <p>Оставьте ваш вопрос или отзыв о работе платформы.</p>
+                <p>На ваши вопросы мы ответим максимально оперативно</p>
+
+                <form method="get" action="/">
+
+                    <label>
+                        <input type="text" name="name" required/>
+                        <span>Ваше имя</span>
+                    </label>
+
+                    <label>
+                        <input type="email" name="email" required/>
+                        <span>e-mail</span>
+                    </label>
+
+                    <label>
+                        <input type="text" name="message"/>
+                        <span>Текст сообщения</span>
+                    </label>
+
+                    <div class="popup__btn-wrap">
+
+                        <button type="submit" class="btn btn_4">ОТПРАВИТЬ</button>
+
+                    </div>
+
+                </form>
+
+            </div>
+            <!-- /popup__content -->
+
+        </div>
+        <!-- /popup__wrap -->
+
+    </div>
+    <!-- /popup -->
+
+    <script src="js/vendors/jquery-2.2.1.min.js"></script>
+    <script src="js/vendors/swiper.jquery.min.js"></script>
+    <script src="js/index.min.js"></script>
+</body>
+</html>

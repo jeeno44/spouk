@@ -1,0 +1,96 @@
+.card-underline{
+    width: 680px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.card-head{
+    font-size: 29px;
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding: 65px 0 80px;
+}
+h3.text-center{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.form-group{
+    display: block;
+    clear: both;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+.col-md-4{
+    width: 33%;
+    float: left;
+}
+.col-md-6{
+    width: 55%;
+    float: left;
+}
+.text-center{
+    text-align: center;
+}
+hr{
+    display: block;
+    width: 100%;
+    clear: both;
+    overflow: hidden;
+    background: #e2e2e2;
+    height: 1px;
+    border: none;
+    margin-bottom: 25px;
+}
+.control-label{
+    font-size: 14px;
+    color: #989898;
+    text-align: right;
+    padding-right: 20px;
+}
+.hidden{
+    display: none;
+}
+.show-next{
+    cursor: pointer;
+    color: #1690e5;
+}
+input[type=text], input[type=password], input[type=tel], input[type=email]{
+    border: none;
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #e2e2e2;
+    padding: 0 2px 12px;
+    min-height: 30px;
+    font-size: 14px;
+}
+input[type=text]:focus, input[type=password]:focus, input[type=tel]:focus, input[type=email]:focus{
+    border-bottom: 2px solid #1690e5;
+}
+.btn-primary{
+    background: #1690e5;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.help-block{
+    display: block;
+    color: red;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    clear: both;
+    width: 100%;
+}
+.alert{
+    margin-top: -55px;
+}
+input.site__input.has-error{
+    border-bottom: 1px solid red;
+}
+.text-red{
+    display: block;
+    margin-top: -34px;
+    font-size: 80%;
+    color: red;
+}

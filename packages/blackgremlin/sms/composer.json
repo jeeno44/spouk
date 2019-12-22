@@ -1,0 +1,12 @@
+{
+    "name": "backgremlin/sms",
+    "description": "send sms",
+    "authors": [
+        {
+            "name": "Andrey Malygin",
+            "email": "hello@andrey-malygin.ru"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {}
+}
